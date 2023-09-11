@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main-form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(238, 241, 243);
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.hero-div{
+    padding: 2em;
+}
+
+.hero-text{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.form-div{
+    width: 25%;
+    /* border: 5px solid black; */
+    padding: 3em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.signUpDiv{
+    display: flex;
+    justify-content: center;
+}

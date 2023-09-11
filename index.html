@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/417d36ea26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container">
+      <a class="brand-name navbar-brand text-white" href="#">Personal Blogging App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="./loginPage/index.html" id="logoutBtn">Login</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+<div class="hero-div">
+  <div class="hero-text-div">
+      <h2 class="hero-text container">Good morning readers</h2>
+  </div>
+</div>
+
+<div class="blogsHeading container mt-4">
+  <h3 class="hidden" id="myBlogStatus">All Blogs</h3>
+  <p class="pathToMainPage"><i class="fa-solid fa-less-than mr-3 h1 text-primary"></i> <a href="#" class="link-underline-primary h1 text-primary">Back to the main page</a></p>
+</div>
+
+<div class="container blog-container mt-4">
+  <div class="blogs-div mt-4">
+     <div class="blog-header-div">
+       <div class="img-div">
+         <img src="../assests/dummy.webp'" alt="" class="userImage">
+       </div>
+       <div class="titleDiv col-md-5 ml-3">
+         <h4 class="blogTitle">${blogTitle}</h4>
+         <p class="text-secondary">${userName ? userName : firstName + ' ' + surName} - ${new Date(time.seconds * 1000)}</p>
+       </div>
+     </div>
+     <div class="blog-content-div mt-3">
+       <p class="blog-content">${blogContent}</p>
+     </div>
+     <div>
+         <button class="btn text-primary" onClick ="getSingleBlog('${doc.id}')">see all from this user...</button>
+     </div>
+   </div>
+</div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+      <script type="module" src="./app.js"></script>
+</body>
+</html>

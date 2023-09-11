@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.hero-div{
+    padding: 1em;
+}
+
+.hero-text{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.signUpDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.blogs-div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.blog-data{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 2em;
+}
+
+.blogs-div{
+    padding: 2em;
+}
+
+.blog-header-div{
+    display: flex;
+    /* justify-content: ; */
+}
+
+.userImage{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.titleDiv{
+    margin-left: 1rem;
+}
